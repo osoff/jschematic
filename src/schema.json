@@ -1,0 +1,32 @@
+{
+  "title": "Insert New Field",
+  "description": "wer",
+  "type": "object",
+  "required": ["fieldType", "title"],
+  "properties": {
+    "fieldType": {
+      "type": "string",
+      "title": "Field type",
+      "enum": ["Input", "Select", "CheckBox", "File", "Date"]
+    },
+    "title": {
+      "type": "string",
+      "title": "Field title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Field description"
+    },
+    "check_id": {
+      "title": "Automatic ID",
+      "type": "boolean",
+      "default": true,
+      "enum": [true, false]
+    },
+    "required": {
+      "type": "boolean",
+      "title": "¿It is required field?",
+      "default": false
+    }
+  }
+}
